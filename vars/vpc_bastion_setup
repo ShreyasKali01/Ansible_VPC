@@ -1,0 +1,4 @@
+bastion_ami: ami-074dc0a6f6c764218
+region: ap-south-1
+MYIP: 192.168.1.100
+
