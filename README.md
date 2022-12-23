@@ -17,3 +17,9 @@ NAT Gateway: A NAT (Network Address Translation) Gateway allows resources in a p
 VPN Connection: A VPN (Virtual Private Network) Connection allows you to securely connect your on-premises network to your VPC over the internet. This can be used to extend your on-premises network into the cloud.
 Security Group: A Security Group is a virtual firewall that controls inbound and outbound traffic to resources in your VPC. You can create rules to allow or deny traffic based on IP address, port, and protocol.
 Route Tables: A Route Table is a VPC component that determines how traffic is routed between subnets, the internet, and on-premises networks. You can create multiple Route Tables and associate them with different subnets to control the flow of traffic within your VPC.
+
+# Bastion Host
+A bastion host, also known as a jump host or jump server, is a secure server that is used to access other servers on a network. It is typically used as a secure gateway to access servers in a private network, such as a corporate network or a virtual private cloud (VPC).
+A bastion host is typically configured with strong security measures, such as two-factor authentication and strict access controls, to prevent unauthorized access. It is also usually configured with a minimal operating system and a limited number of tools and applications to reduce the attack surface.
+To access servers on the private network, users connect to the bastion host using a secure protocol such as SSH (Secure Shell) or RDP (Remote Desktop Protocol). From there, they can use the bastion host to connect to other servers on the private network.
+Bastion hosts are commonly used in cloud computing environments to provide a secure way to access resources in a VPC. They can also be used in on-premises environments to provide secure access to internal networks.
