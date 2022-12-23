@@ -29,8 +29,12 @@
             to_port: 22
             cidr_ip: "172.31.46.37/32"
       register: BastionSG_out
-    - debug:
-        var: BastionSG_out 
+    - name: insert / updaate BastionSGid in vars
+      blockinfile:
+        path: vars/vpc_setup
+        backup: yes
+        block: |
+          BastionSGid: "{{BastionSG_out.group_id}}"
     - name: creating bastion host
       ec2:
         key_name: vprofile-key

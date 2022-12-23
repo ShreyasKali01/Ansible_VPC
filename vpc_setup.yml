@@ -127,6 +127,6 @@
 
     - name: Create a var file for VPC
       copy:
-        content: " vpc_id: {{ vpcout.vpc.id}}\n pubsub1id: {{ pubsub1.subnet.id}}\n pubsub2id: {{ pubsub3.subnet.id}}\n pubsub3id: {{ pubsub3.subnet.id}}\n  privsub1id: {{privsub1.subnet.id}}\n privsub2id: {{privsub2.subnet.id}}\n  privsub3id: {{privsub3.subnet.id}}\n igwid: {{igw_out.gateway_id}}\n pubRTid: {{ pubRT_out.route_table.id}}"
-        dest: vars/output_vars
+        content: "region: {{region}}\n vpc_id: {{ vpcout.vpc.id}}\n pubsub1id: {{ pubsub1.subnet.id}}\n pubsub2id: {{ pubsub3.subnet.id}}\n pubsub3id: {{ pubsub3.subnet.id}}\n  privsub1id: {{privsub1.subnet.id}}\n privsub2id: {{privsub2.subnet.id}}\n  privsub3id: {{privsub3.subnet.id}}\n igwid: {{igw_out.gateway_id}}\n pubRTid: {{ pubRT_out.route_table.id}}"
+        dest: vars/output_var
 

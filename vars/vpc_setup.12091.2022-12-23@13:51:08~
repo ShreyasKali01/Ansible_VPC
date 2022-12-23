@@ -22,6 +22,3 @@ memcache_ami: ami-0cca134ec43cf708f
 rmq_ami: ami-0cca134ec43cf708f
 mysql_ami: ami-0cca134ec43cf708f
 
-# BEGIN ANSIBLE MANAGED BLOCK
-BastionSGid: "sg-086288aaf729438a8"
-# END ANSIBLE MANAGED BLOCK
